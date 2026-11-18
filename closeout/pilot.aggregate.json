@@ -1,0 +1,75 @@
+{
+  "aggregate_sha256": {
+    "hardware.json": "213d5f0f428818af8d5de342c84c6fa353088e7c3cb566650e4c9dbe7cdd8259",
+    "models/development/first.json": "a95095ddeb9fedc443b6bd06ccca897cb30b2262fdfb52c99a68cb53be5e1cc0",
+    "models/development/hardware.json": "029f70934fba239dae2fc911295bf1bb0a34bdb92d7d1b5f43a2d8502e79f313",
+    "models/development/refine.json": "4b196c4477e9a8c1100d2494e1e45182f46672bc2e3c961e5c8d5bf60300f656",
+    "pilot/gate.json": "eb0dce5f5c885628f26893796011494124ea724d9d0b7e79af5eb896b06ab512",
+    "report/REPORT.md": "bd513dacabadc249e7f4867cd48de0a85aa9043db677f214c09ff6a1d3a0db03"
+  },
+  "archive_sha256": "a3669d405064959e29aa013f0d2d3ec90d7d47247fcab893f43c733426346de0",
+  "gate": {
+    "harmed_fraction": 0.3287671232876712,
+    "improved_fraction": 0.6657534246575343,
+    "oracle_minus_entropy": 0.009073177062147275,
+    "oracle_minus_never": 0.019289855091631503,
+    "passed": false,
+    "scores": {
+      "entropy": 0.8682963984309878,
+      "never": 0.8580797204015036,
+      "oracle": 0.8773695754931351
+    }
+  },
+  "groups": {
+    "entropy": {
+      "harmed": 19,
+      "helped": 53,
+      "lost_overlap": 0,
+      "macro_dice_contribution": 0.010216678029484262,
+      "rescued": 0,
+      "scans": 73,
+      "unchanged": 1
+    },
+    "entropy_only": {
+      "harmed": 19,
+      "helped": 18,
+      "lost_overlap": 0,
+      "macro_dice_contribution": -0.0021037429576060977,
+      "rescued": 0,
+      "scans": 38,
+      "unchanged": 1
+    },
+    "oracle": {
+      "harmed": 0,
+      "helped": 73,
+      "lost_overlap": 0,
+      "macro_dice_contribution": 0.019289855091631405,
+      "rescued": 0,
+      "scans": 73,
+      "unchanged": 0
+    },
+    "oracle_only": {
+      "harmed": 0,
+      "helped": 38,
+      "lost_overlap": 0,
+      "macro_dice_contribution": 0.006969434104541043,
+      "rescued": 0,
+      "scans": 38,
+      "unchanged": 0
+    },
+    "shared": {
+      "harmed": 0,
+      "helped": 35,
+      "lost_overlap": 0,
+      "macro_dice_contribution": 0.012320420987090358,
+      "rescued": 0,
+      "scans": 35,
+      "unchanged": 0
+    }
+  },
+  "kind": "descriptive fold-4 closeout; no model selection",
+  "patients": 214,
+  "portable_manifest_verified": true,
+  "predictions_sha256": "10144896e72597091939b332984f13ba170df33cd0e275e3b3dc064c28a5b7d4",
+  "scans": 365
+}

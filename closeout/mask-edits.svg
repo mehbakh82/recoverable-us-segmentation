@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 400" role="img" aria-labelledby="title desc">
+<title id="title">Pixel changes on entropy-selected retries</title>
+<desc id="desc">Dots are per-scan medians and whiskers span the middle 50 percent. Worsened scans had a median of 29.0 percent of lesion area in added false positives, compared with 3.9 percent on improved scans.</desc>
+<rect width="860" height="400" fill="white"/>
+<g font-family="sans-serif" fill="#1d303d">
+<text x="18" y="34" font-size="22" font-weight="bold">What changed when a mask was retried?</text>
+<text x="18" y="58" font-size="14">Edited pixels as a percentage of reference lesion area · BUS-BRA fold 4 · post hoc</text>
+<path d="M215.0 106V325" stroke="#d4dce1"/>
+<text x="215.0" y="346" text-anchor="middle" font-size="13">0%</text>
+<path d="M330.0 106V325" stroke="#d4dce1"/>
+<text x="330.0" y="346" text-anchor="middle" font-size="13">25%</text>
+<path d="M445.0 106V325" stroke="#d4dce1"/>
+<text x="445.0" y="346" text-anchor="middle" font-size="13">50%</text>
+<path d="M560.0 106V325" stroke="#d4dce1"/>
+<text x="560.0" y="346" text-anchor="middle" font-size="13">75%</text>
+<path d="M675.0 106V325" stroke="#d4dce1"/>
+<text x="675.0" y="346" text-anchor="middle" font-size="13">100%</text>
+<circle cx="23" cy="85" r="4.5" fill="#007367"/>
+<text x="36" y="90" font-size="14">Improved (53 scans)</text>
+<text x="18" y="135" font-size="15">Lesion pixels recovered</text>
+<path d="M232.8778531770512 124H295.6650561318744 M232.8778531770512 121v6 M295.6650561318744 121v6" stroke="#007367" stroke-width="2"/>
+<circle cx="253.77394636015325" cy="124" r="4.5" fill="#007367"/>
+<text x="18" y="190" font-size="15">Lesion pixels erased</text>
+<path d="M217.50159396917076 179H228.8513841670714 M217.50159396917076 176v6 M228.8513841670714 176v6" stroke="#007367" stroke-width="2"/>
+<circle cx="220.29390934844193" cy="179" r="4.5" fill="#007367"/>
+<text x="18" y="245" font-size="15">False positives removed</text>
+<path d="M218.49809885931558 234H352.1929824561403 M218.49809885931558 231v6 M352.1929824561403 231v6" stroke="#007367" stroke-width="2"/>
+<circle cx="252.01149425287355" cy="234" r="4.5" fill="#007367"/>
+<text x="18" y="300" font-size="15">False positives added</text>
+<path d="M221.7817331895002 289H277.5749509666573 M221.7817331895002 286v6 M277.5749509666573 286v6" stroke="#007367" stroke-width="2"/>
+<circle cx="233.14229249011856" cy="289" r="4.5" fill="#007367"/>
+<rect x="241" y="81" width="8" height="8" fill="#973e27"/>
+<text x="258" y="90" font-size="14">Worsened (19 scans)</text>
+<path d="M218.18108643545492 136H242.95138074801986 M218.18108643545492 133v6 M242.95138074801986 133v6" stroke="#973e27" stroke-width="2"/>
+<rect x="222.77330895795248" y="132" width="8" height="8" fill="#973e27"/>
+<path d="M215.21796130148408 191H235.69950507666363 M215.21796130148408 188v6 M235.69950507666363 188v6" stroke="#973e27" stroke-width="2"/>
+<rect x="217.44500209117524" y="187" width="8" height="8" fill="#973e27"/>
+<path d="M217.82727093132434 246H354.13955212617896 M217.82727093132434 243v6 M354.13955212617896 243v6" stroke="#973e27" stroke-width="2"/>
+<rect x="234.71183605186116" y="242" width="8" height="8" fill="#973e27"/>
+<path d="M244.02132282068862 301H684.1415911719889 M244.02132282068862 298v6 M684.1415911719889 298v6" stroke="#973e27" stroke-width="2"/>
+<rect x="344.2961827807188" y="297" width="8" height="8" fill="#973e27"/>
+<text x="18" y="379" font-size="13">Dots/squares: medians. Whiskers: interquartile ranges. One unchanged scan is not plotted.</text>
+</g></svg>

@@ -2,7 +2,21 @@
 
 Can a model predict **which first-pass masks a second pass will improve**, rather than simply which masks are uncertain? This is a research pipeline, not a diagnostic tool. The first-pass segmenter and refiner are identical across routing policies. Their second-pass assignments differ.
 
-**Status:** executable implementation. Synthetic results test the software, not the hypothesis. No H100 memory, latency, pilot, or external performance number should be claimed before running the corresponding clinical stages. See [protocol and model cards](PROTOCOL.md) and [datasets and release policy](DATA.md).
+**Independent MSc research pilot — completed; router training stopped by the prespecified rule.** On 365 BUS-BRA scans from 214 held-out development patients, entropy-based retries improved segmentation. Even perfect hindsight did not add enough over entropy to justify training a router at this budget.
+
+| Policy on fold 4 | Retries | Patient-macro lesion Dice |
+|---|---:|---:|
+| First pass only | 0 | 0.85808 |
+| Highest first-pass entropy | 73 | 0.86830 |
+| Best possible allocation (oracle; requires reference masks) | 73 | 0.87737 |
+
+**Decision:** oracle minus entropy was **+0.00907**, below the predeclared **+0.01000** gate. The two policies shared 35 retries and each chose 38 different scans. No router was fitted to clinical data; fold 5, BrEaST and BUS-UCLM were **not scored**. [Pilot results and overlap analysis](closeout/PILOT-CLOSEOUT.md) · [Protocol](PROTOCOL.md) · [Dataset sources and terms](DATA.md).
+
+**Post-hoc: what went wrong on individual retries?** Of 73 entropy-selected retries, 53 improved, 19 worsened and one was unchanged. All 19 worsened scans had the entire reference lesion inside the crop. In 16 of those 19, refinement increased the number of false-positive pixels. The chart distinguishes extra background included from correctly segmented lesion tissue erased; these are reference-mask comparisons, not clinical diagnoses. [Methods and full aggregate results](closeout/MASK-AUDIT.md).
+
+![Post-hoc mask-change audit: improved versus worsened entropy-selected retries](closeout/mask-edits.svg)
+
+For historical replay, use the [prepilot tag](https://github.com/mehbakh82/recoverable-us-segmentation/tree/prepilot). It was imported for this release from the original verified pre-pilot ZIP, not timestamped on GitHub before training. The public release contains code, documentation and aggregate findings only.
 
 ## Try it without medical data
 
